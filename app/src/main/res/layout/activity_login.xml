@@ -42,22 +42,22 @@
         android:height="40sp"
         android:layout_margin="5dp"/>
     <Button
-        android:id="@+id/loginButtonId"
+        android:id="@+id/login_Button_Id"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/loginButton_text"
         android:textSize="20sp"
-        android:layout_margin="20sp"
+        android:layout_margin="10sp"
         android:backgroundTint="#077AAF"
         />
     <Button
-        android:id="@+id/regButtonIdto"
+        android:id="@+id/reg_Button_Id"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/regButton_text"
         android:textSize="20dp"
-        android:layout_marginLeft="20dp"
-        android:layout_marginRight="20dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
         android:backgroundTint="#0F4DE8"
         />
 
