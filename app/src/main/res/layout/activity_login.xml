@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#D3BC4AED"
+    android:gravity="center"
+    tools:context=".LoginActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/loginText"
+        android:textColor="@color/white"
+        android:textSize="30sp"
+        android:padding="15dp"
+        android:layout_gravity="center_horizontal"/>
+
+    <EditText
+        android:id="@+id/email_id"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginBottom="20dp"
+        android:hint="@string/email_text"
+        android:height="40sp"
+        android:layout_margin="5dp"/>
+
+    <EditText
+        android:id="@+id/password_id"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginBottom="20dp"
+        android:hint="@string/password_text"
+        android:height="40sp"
+        android:layout_margin="5dp"/>
+    <Button
+        android:id="@+id/loginButtonId"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/loginButton_text"
+        android:textSize="20sp"
+        android:layout_margin="20sp"
+        android:backgroundTint="#077AAF"
+        />
+    <Button
+        android:id="@+id/regButtonIdto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/regButton_text"
+        android:textSize="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:backgroundTint="#0F4DE8"
+        />
+
+</LinearLayout>

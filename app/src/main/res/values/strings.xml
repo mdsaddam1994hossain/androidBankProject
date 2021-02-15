@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">BankProject</string>
+    <string name="signuptext">Sign Up</string>
+    <string name="loginText">Login</string>
+    <string name="fname_text">Input First Name</string>
+    <string name="lname_text">Input Last Name</string>
+    <string name="phone_text">Input Phone number</string>
+    <string name="email_text">Input Email</string>
+    <string name="password_text">Input Password</string>
+    <string name="repassword_text">Input Repassword</string>
+    <string name="regButton_text">Registration</string>
+    <string name="loginButton_text">Login</string>
+</resources>
