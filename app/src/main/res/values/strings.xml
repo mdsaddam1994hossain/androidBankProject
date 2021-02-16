@@ -1,5 +1,7 @@
 <resources>
     <string name="app_name">BankProject</string>
+    <string name="search_text">Input id</string>
+    <string name="search_button_text">Search</string>
     <string name="signuptext">Sign Up</string>
     <string name="loginText">Login</string>
     <string name="fname_text">Input First Name</string>
@@ -10,4 +12,5 @@
     <string name="repassword_text">Input Repassword</string>
     <string name="regButton_text">Registration</string>
     <string name="loginButton_text">Login</string>
+    <string name="showinButton_text">Display All Registered</string>
 </resources>

@@ -61,4 +61,15 @@
         android:backgroundTint="#0F4DE8"
         />
 
+<!--    <Button-->
+<!--        android:id="@+id/display_data_button"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="@string/showinButton_text"-->
+<!--        android:textSize="20dp"-->
+<!--        android:layout_marginLeft="10dp"-->
+<!--        android:layout_marginRight="10dp"-->
+<!--        android:backgroundTint="#036161"-->
+<!--        />-->
+
 </LinearLayout>

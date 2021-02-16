@@ -2,6 +2,7 @@ package com.example.bankproject;
 
 import android.content.ContentValues;
 import android.content.Context;
+import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
 
@@ -48,5 +49,12 @@ public class MyDbHelper extends SQLiteOpenHelper {
             content.put("password",password);
             sqLiteDatabase.insert(TABLE_NAME,null,content);
 
+    }
+
+
+    public  Cursor displayData(){
+        SQLiteDatabase sqLiteDatabase = this.getWritableDatabase();
+        Cursor cursor = sqLiteDatabase.rawQuery(" select * from customer ",null);
+        return  cursor;
     }
 }
