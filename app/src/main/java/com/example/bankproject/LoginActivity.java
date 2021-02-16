@@ -28,6 +28,13 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
 
     @Override
     public void onClick(View v) {
+        if(v.getId() == R.id.login_Button_Id){
+            String useremail = email.getText().toString();
+            String userpass = password.getText().toString();
+            Intent intent = new Intent(this,HomeActivity.class);
+            intent.putExtra("email",useremail);
+            startActivity(intent);
+        }
         if(v.getId() == R.id.reg_Button_Id){
             Intent intent =new Intent(this, MainActivity.class);
             startActivity(intent);
