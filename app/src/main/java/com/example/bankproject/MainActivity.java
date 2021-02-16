@@ -9,6 +9,16 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 
+import com.example.bankproject.model.Customer;
+import com.example.bankproject.restClient.RestClient;
+import com.example.bankproject.restService.CustomerRepo;
+
+import java.util.List;
+
+import retrofit2.Call;
+import retrofit2.Callback;
+import retrofit2.Response;
+
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
 
     MyDbHelper myDbHelper = new MyDbHelper(this);
@@ -31,6 +41,22 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
         regButton.setOnClickListener(this);
         logButton.setOnClickListener(this);
+
+        CustomerRepo customerRepo = RestClient.getRetrofitInstance().create(CustomerRepo.class);
+        customerRepo.getAllCustomer().enqueue(new Callback<List<Customer>>() {
+            @Override
+            public void onResponse(Call<List<Customer>> call, Response<List<Customer>> response) {
+                if(response.body().size() > 0 ){
+                    fname.setText(response.body().get(0).getFirstName());
+                }
+            }
+
+            @Override
+            public void onFailure(Call<List<Customer>> call, Throwable t) {
+                System.out.println("Error "+ t.getMessage());
+                t.printStackTrace();
+            }
+        });
     }
 
     @Override
@@ -51,6 +77,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
         }
     }
+
+
 
 
 }
