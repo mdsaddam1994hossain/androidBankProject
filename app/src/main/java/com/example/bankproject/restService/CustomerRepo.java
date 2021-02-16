@@ -11,4 +11,9 @@ public interface CustomerRepo {
 
     @GET("/api/customers")
     Call<List<Customer>> getAllCustomer();
+
+    //@GET("/api/customer")
+
+
+
 }
